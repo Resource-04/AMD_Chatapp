@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000"],
+    origin: ["http://localhost:3000", "https://www.shourk.com", "https://shourk.com"],
     methods: ["GET", "POST" , "PUT" , "DELETE"],
     credentials: true
   },
